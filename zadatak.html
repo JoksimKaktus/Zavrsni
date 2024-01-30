@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="zadatak.css">
+    </head>
+    <body>
+        <h1>Book List</h1>
+        <div>
+            <label for="name-sr">Name:</label>
+            <input id = "name-sr" type="text">
+            <label for="auth-sr">Author:</label>
+            <input id = "auth-sr" type="text">
+            <label for="year-sr">Year:</label>
+            <input id = "year-sr" type="text">
+            <button id="sr">Search</button>
+        </div>
+
+        <table id = "tabela" style="width: 29%;">
+            <tr>
+                <th onclick="sort('name')" style="width: 40%;">Name</th>
+                <th onclick="sort('auth')" style="width: 30%;">Author</th>
+                <th onclick="sort('year')" style="width: 13%;">Year</th>
+                <th style="width: 17%;">Remove</th>
+            </tr>
+        </table>
+
+        <h2>Add New Book</h2>
+        <div>
+            <label for="name-add">Name:</label>
+            <input id = "name-add" type="text">
+            <label for="auth-add">Author:</label>
+            <input id = "auth-add" type="text">
+            <label for="year-add">Year:</label>
+            <input id = "year-add" type="text">
+            <button id="add">Add Book</button>
+        </div>
+
+        <script src="zadatak.js"></script>
+    </body>
+</html>
